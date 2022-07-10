@@ -1,0 +1,26 @@
+.sideBarContainer{
+    width :27%;
+   
+}
+.cardHeader span{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    color: #565673;
+    text-transform: uppercase;
+
+}
+.author{
+    width:100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+
+    
+ .author img{
+         max-width: 100%;
+        max-height: 100%;
+     }
