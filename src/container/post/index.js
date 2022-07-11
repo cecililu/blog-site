@@ -1,13 +1,20 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 import { BlogPost } from '../../components/Blog-Post'
 import { Sidebar } from '../../components/sidebar'
 import { Card } from '../../components/UI/cards'
 import './style.css'
-export const Post = () => {
+import { useParams } from 'react-router-dom'
+export const Post = (props) => {
+
+  let { postid } = useParams();
+  console.log(postid)
   return (
     <section  className='container'>
-      <BlogPost/> 
+    
+      <BlogPost  id={postid}/> 
       <Sidebar/>
+      <Outlet></Outlet>
     </section>
   )
 }

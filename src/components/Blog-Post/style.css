@@ -6,6 +6,7 @@ background: white;
 
  .blogPostContainer{
    width: 70%;
+   padding: 0px;
  }
 
  .blogHeader{
@@ -31,6 +32,7 @@ background: white;
     font-style:italic;
      padding: 10px 0;
      display: block;
+     color: antiquewhite;
 }
 .post-img{
 width:100%;
@@ -42,4 +44,11 @@ box-sizing: border-box;
 .post-img img{
     max-width: 100%;
     max-height: 100%;
+ }
+
+ .postContent{
+  padding: 10px;
+  font-size: 13px;
+  text-align: justify;
+  text-justify: inter-word;
  }

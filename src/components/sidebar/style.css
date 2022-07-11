@@ -14,13 +14,54 @@
 }
 .author{
     width:100%;
-    padding: 10px 0;
+       padding: 10px 0;
     box-sizing: border-box;
 }
 
 
     
  .author img{
-         max-width: 100%;
-        max-height: 100%;
-     }
+        max-width: 100%;
+        max-height: 80%;
+        padding: 10px 10px;
+        box-sizing: border-box;
+  
+ }
+ .text{
+    padding: 10px;
+font-size: 10px;
+}
+.text p{text-align: justify;
+    text-justify: inter-word;
+}
+.recentPosts{
+    font-weight: 500px;
+    color:black;
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+.recentPosts span{
+    color:grey;
+    font-size: 9px;
+    padding: 0;
+    margin:1px
+}
+.recentPost{
+   border-bottom: 1px solid #eee;
+   margin-bottom: 10px;
+   padding: 10px;
+}
+.recentPost h3{
+    color: #565673;
+    letter-spacing: 1px;
+    font-size:14px;
+    font-weight:500;
+    margin:0;
+}
+.recentPost span{
+   font-size: 10px;
+   font-weight:400;
+   color:#565673
+}
