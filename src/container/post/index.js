@@ -13,7 +13,7 @@ export const Post = (props) => {
     <section  className='container'>
     
       <BlogPost  id={postid}/> 
-      <Sidebar/>
+      <Sidebar id={postid}/>
       <Outlet></Outlet>
     </section>
   )

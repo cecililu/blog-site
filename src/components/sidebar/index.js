@@ -1,7 +1,23 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import { Card } from '../UI/cards'
 import './style.css'
-export const Sidebar = () => {
+import blogPost from '../../assets/blog.json'
+import {NavLink} from 'react-router-dom'; 
+export const Sidebar = (props) => {
+  const [posts, setPosts] = useState([]);
+
+useEffect(()=>{
+    // const postid=props.id;
+    // console.log(postid);
+     const posts=blogPost.data
+    // console.log('find wala post after this')
+    console.log('THis is posts')
+    console.log(posts)
+    setPosts(posts)
+    
+  }, [posts]);
+
+
   return (
     <div className='sideBarContainer'>
      <Card style={{}}>
@@ -28,20 +44,20 @@ export const Sidebar = () => {
       </div>
 
     <div className='recentPosts'>
-      <div className='recentPost'>
-      <h3>Post title</h3>
-      <span>July date</span>
+     {posts.map(post=>{
+       return(
+       
+              <NavLink to={`/post/${post.id}`}>
+              <div key={post.id}className='recentPost'>
+               <h3>{post.blogTitle}</h3>
+              <span>{post.postedOn}</span>
+               </div>
+               </NavLink>)
+    
+       })
+       }
       </div>
-      <div className='recentPost'>
-      <h3>Post title2</h3>
-      <span>July date</span>
-      </div>
-      <div className='recentPost'>
-      <h3>Post title3</h3>
-      <span>July date</span>
-      </div>
-      </div>
-       </Card>
+      </Card>
 
     </div>
   
